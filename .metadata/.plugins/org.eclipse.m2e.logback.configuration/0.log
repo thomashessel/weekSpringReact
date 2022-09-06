@@ -766,3 +766,19 @@ org.eclipse.jdt.core.JavaModelException: net.minidev_accessors-smart_2.4.8 does 
 2022-09-04 22:33:14,367 [Worker-38: Launching projpedidos - ProjpedidosApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2022-09-04 22:33:14,369 [Worker-38: Launching projpedidos - ProjpedidosApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2022-09-04 22:33:14,369 [Worker-38: Launching projpedidos - ProjpedidosApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Projeto_week_springReact_DevSuper\projpedidos\src\test\resources
+2022-09-05 19:58:55,713 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2022-09-05 19:59:02,261 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-10.0.9; built: 2022-03-30T16:46:32.527Z; git: a9eaf8d5d73369acf610ce88f850c0d56c4b1113; jvm 18.0.1+10
+2022-09-05 19:59:02,305 [Start Help Server] INFO  o.e.j.s.s.DefaultSessionIdManager - Session workerName=node0
+2022-09-05 19:59:02,350 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@58a106a{/help,null,AVAILABLE}
+2022-09-05 19:59:02,374 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@205e91e8{HTTP/1.1, (http/1.1)}{127.0.0.1:58375}
+2022-09-05 19:59:02,378 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started Server@1673bec6{STARTING}[10.0.9,sto=0] @27335ms
+2022-09-05 20:28:36,665 [Worker-12: Launching projpedidos - ProjpedidosApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-05 20:28:36,672 [Worker-12: Launching projpedidos - ProjpedidosApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-05 20:28:36,688 [Worker-12: Launching projpedidos - ProjpedidosApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-05 20:28:36,691 [Worker-12: Launching projpedidos - ProjpedidosApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-05 20:28:36,692 [Worker-12: Launching projpedidos - ProjpedidosApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Projeto_week_springReact_DevSuper\projpedidos\src\test\resources
+2022-09-05 21:01:06,120 [Worker-10: Launching projpedidos - ProjpedidosApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-05 21:01:06,123 [Worker-10: Launching projpedidos - ProjpedidosApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-05 21:01:06,126 [Worker-10: Launching projpedidos - ProjpedidosApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-05 21:01:06,129 [Worker-10: Launching projpedidos - ProjpedidosApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-05 21:01:06,129 [Worker-10: Launching projpedidos - ProjpedidosApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Projeto_week_springReact_DevSuper\projpedidos\src\test\resources
