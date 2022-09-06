@@ -1,18 +1,18 @@
 package com.treinoweekspringreact.repositories;
 
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
-import org.springframework.stereotype.Component;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
 import com.treinoweekspringreact.entities.Product;
 
-@Component
-public class ProductRepository {
+@Repository
+public interface ProductRepository extends JpaRepository<Product, Long>{
 	
+	/* Versão original para OO em framewordk do JPA
+	 * import org.springframework.stereotype.Component;
+	 * 
+	 * @Component
 	private Map<Long, Product> map = new HashMap<>();
 		
 	public void save(Product produto) {
@@ -26,5 +26,5 @@ public class ProductRepository {
 	public Product findById(Long id) {
 		return map.get(id);
 	}
-
+*/
 }

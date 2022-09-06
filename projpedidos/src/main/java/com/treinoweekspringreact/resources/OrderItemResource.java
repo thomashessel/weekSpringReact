@@ -29,7 +29,7 @@ public class OrderItemResource {
 	
 	@GetMapping(value="/{id}")
 	public ResponseEntity<OrderItem> findById(@PathVariable Long id) throws ParseException{
-		OrderItem cli = orderItemRepository.findById(id);
+		OrderItem cli = orderItemRepository.findById(id).get();
 		return ResponseEntity.ok().body(cli);
 	}
 }

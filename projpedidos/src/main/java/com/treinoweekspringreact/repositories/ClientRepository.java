@@ -1,17 +1,19 @@
 package com.treinoweekspringreact.repositories;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
-import org.springframework.stereotype.Component;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
 import com.treinoweekspringreact.entities.Client;
 
-@Component
-public class ClientRepository {
+@Repository
+public interface ClientRepository extends JpaRepository<Client, Long> {
 
+	
+	
+	/* Versão original para OO em framewordk do JPA
+	 * import org.springframework.stereotype.Component;
+	 * 
+	 * @Component
 	private Map<Long, Client> map = new HashMap<>();
 	public void save(Client client) {
 		map.put(client.getId(), client);
@@ -22,4 +24,6 @@ public class ClientRepository {
 	public List<Client> findAll(){
 		return new ArrayList<Client>(map.values());
 	}
+	
+	*/
 }

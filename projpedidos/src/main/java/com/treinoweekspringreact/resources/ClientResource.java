@@ -28,7 +28,7 @@ public class ClientResource {
 	
 	@GetMapping(value="/{id}")
 	public ResponseEntity<Client> findById(@PathVariable Long id) throws ParseException{
-		Client cli = clientRepository.findById(id);
+		Client cli = clientRepository.findById(id).get();
 		return ResponseEntity.ok().body(cli);
 	}
 }
