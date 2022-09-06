@@ -1,7 +1,10 @@
 package com.treinoweekspringreact.entities;
 
-public class OrderItem {
+import java.io.Serializable;
 
+public class OrderItem implements Serializable{
+
+	private static final long serialVersionUID = 1L;
 	private long id;
 	private int quantity;
 	private double price;
@@ -12,8 +15,9 @@ public class OrderItem {
 		
 	}
 
-	public OrderItem(int quantity, double price) {
+	public OrderItem(long id,int quantity, double price) {
 		super();
+		this.id=id;
 		this.quantity = quantity;
 		this.price = price;
 	}
