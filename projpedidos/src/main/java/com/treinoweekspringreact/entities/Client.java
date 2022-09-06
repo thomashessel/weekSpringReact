@@ -23,8 +23,9 @@ public class Client implements Serializable{
 		
 	}
 
-	public Client(String name, String email, Date birthDate) {
+	public Client(Long id,String name, String email, Date birthDate) {
 		super();
+		this.id=id;
 		this.name = name;
 		this.email = email;
 		this.birthDate = birthDate;

@@ -5,25 +5,25 @@ import java.io.Serializable;
 public class Product implements Serializable{
 
 	private static final long serialVersionUID = 1L;
-	private long id;
+	private Long id;
 	private String name;
-	private double price;
+	private Double price;
 	
-	public Product() {
-		
+	public Product() {		
 	}
 
-	public Product(String name, double price) {
+	public Product(Long id,String name, double price) {
 		super();
+		this.id=id;
 		this.name = name;
 		this.price = price;
 	}
 
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
@@ -35,11 +35,11 @@ public class Product implements Serializable{
 		this.name = name;
 	}
 
-	public double getPrice() {
+	public Double getPrice() {
 		return price;
 	}
 
-	public void setPrice(double price) {
+	public void setPrice(Double price) {
 		this.price = price;
 	}
 	

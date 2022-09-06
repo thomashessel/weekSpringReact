@@ -5,9 +5,9 @@ import java.io.Serializable;
 public class OrderItem implements Serializable{
 
 	private static final long serialVersionUID = 1L;
-	private long id;
+	private Long id;
 	private int quantity;
-	private double price;
+	private Double price;
 	
 	private Product produto;
 	
@@ -22,11 +22,11 @@ public class OrderItem implements Serializable{
 		this.price = price;
 	}
 
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
@@ -38,11 +38,11 @@ public class OrderItem implements Serializable{
 		this.quantity = quantity;
 	}
 
-	public double getPrice() {
+	public Double getPrice() {
 		return price;
 	}
 
-	public void setPrice(double price) {
+	public void setPrice(Double price) {
 		this.price = price;
 	}
 
