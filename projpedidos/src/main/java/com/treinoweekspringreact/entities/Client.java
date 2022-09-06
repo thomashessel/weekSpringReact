@@ -1,15 +1,17 @@
 package com.treinoweekspringreact.entities;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Client {
-	
-	private long id;
-	public long getId() {
+public class Client implements Serializable{
+
+	private static final long serialVersionUID = 1L;
+	private Long id;
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
