@@ -1,12 +1,14 @@
 package com.treinoweekspringreact.entities;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class Order {
+public class Order implements Serializable{
 	
-	private long id;
+	private static final long serialVersionUID = 1L;
+	private Long id;
 	private Date moment;
 	private OrderStatus status;
 	
@@ -17,8 +19,9 @@ public class Order {
 		
 	}
 
-	public Order(Date moment, OrderStatus status, Client cliente) {
+	public Order(Long id,Date moment, OrderStatus status, Client cliente) {
 		super();
+		this.id=id;
 		this.moment = moment;
 		this.status = status;
 		this.cliente = cliente;
@@ -48,13 +51,18 @@ public class Order {
 		this.cliente = cliente;
 	}
 
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
+
+	public List<OrderItem> getItems() {
+		return items;
+	}
+
 
 	public void addItem(OrderItem item) {
 		items.add(item);

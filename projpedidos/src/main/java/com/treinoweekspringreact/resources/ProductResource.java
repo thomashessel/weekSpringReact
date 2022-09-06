@@ -14,7 +14,7 @@ import com.treinoweekspringreact.entities.Product;
 import com.treinoweekspringreact.repositories.ProductRepository;
 
 @RestController
-@RequestMapping(value="/product")
+@RequestMapping(value="/products")
 public class ProductResource {
 
 	@Autowired
