@@ -10,10 +10,12 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
-import javax.persistence.OneToOne;
+import javax.persistence.Table;
 
 @Entity
+@Table(name="tbPedidos")
 public class Order implements Serializable{
 	
 	private static final long serialVersionUID = 1L;
@@ -24,12 +26,11 @@ public class Order implements Serializable{
 	private Date moment;
 	private OrderStatus status;
 	
-	@OneToOne
+	@ManyToOne
 	@JoinColumn(name="clientId")
 	private Client cliente;
 	
-	@OneToMany
-	@JoinColumn(name="orderItemId")
+	@OneToMany(mappedBy = "order")
 	private List<OrderItem> items = new ArrayList<OrderItem>();
 	
 	public Order() {

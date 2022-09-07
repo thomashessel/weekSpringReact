@@ -7,9 +7,13 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
-import javax.persistence.OneToOne;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
+@Table(name="tbItensPedidos")
 public class OrderItem implements Serializable{
 
 	private static final long serialVersionUID = 1L;
@@ -20,9 +24,14 @@ public class OrderItem implements Serializable{
 	private int quantity;
 	private Double price;
 	
-	@OneToOne
+	@ManyToOne
 	@JoinColumn(name="productId")
 	private Product produto;
+	
+	@JsonIgnore
+	@ManyToOne
+	@JoinColumn(name="orderId")
+	private Order order;
 	
 	public OrderItem() {
 		
@@ -70,4 +79,6 @@ public class OrderItem implements Serializable{
 	public double subTotal() {
 		return quantity * price;
 	}
+
+	
 }
