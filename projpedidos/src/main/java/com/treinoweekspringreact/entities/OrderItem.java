@@ -76,7 +76,7 @@ public class OrderItem implements Serializable{
 		this.produto = produto;
 	}
 	
-	public double subTotal() {
+	public double getSubTotal() {
 		return quantity * price;
 	}
 

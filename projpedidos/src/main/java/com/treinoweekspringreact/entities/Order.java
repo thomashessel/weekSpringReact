@@ -88,10 +88,10 @@ public class Order implements Serializable{
 	public void removeItem(OrderItem item) {
 		items.remove(item);
 	}
-	public double total () {
+	public double getTotal () {
 		double result=0.0;
 		for (OrderItem orderItem : items) {
-			result+=orderItem.subTotal();
+			result+=orderItem.getSubTotal();
 		}
 		return result;
 	}
